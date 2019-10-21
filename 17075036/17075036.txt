@@ -13,7 +13,7 @@ The noun "girls" is plural. We know this because of the 's' that has been added 
 Porter (1980) proposed an algorithm for Suffix Stripping, which is probably the most widely used algorithm for stemming in English.
 It is a rule-based algorithm and is best suited for inflected languages such as English. It isn't a hard and fast linguistic-based approach.
 
-Hindi too, on the other hand, is an inflected language but Hindi is a HIGHLY INFLECTED LANGUAGE. So any suffix stripping algorithm must work decently in Hindi Stemming. Words in Hindi are inflected to express the gender, number, person and the tense. Our task will be just to find suffixes that represent different grammatical categories such as tense, case, voice, aspect, person, number, gender, mood, definiteness.
+Hindi too, on the other hand, is an inflected language but Hindi is a highly inflected language. So any suffix stripping algorithm must work decently in Hindi Stemming. Words in Hindi are inflected to express the gender, number, person and the tense. Our task will be just to find suffixes that represent different grammatical categories such as tense, case, voice, aspect, person, number, gender, mood, definiteness.
 
 Examples:
 In the present tense,
@@ -38,5 +38,5 @@ Note that we must not remove Prefixes in Hindi as they are generally derivative,
 Example:
 पुत्र (Putr), सुपुत्र (Suputr) & कुपुत्र (Kuputr) have different meanings.
 
-Being a heavily inflected language can be a negative too. Because we cannot always have list of all suffixes in Hindi.
-For example, वान - धनवान , गुणवान cannot be identified by the above approach.
+Being a heavily inflected language can be a negative also. Because we cannot always have list of all suffixes in Hindi.
+For example, वान - धनवान , गुणवान cannot be identified by the above methodology.
