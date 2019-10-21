@@ -14,7 +14,7 @@ sentences=text.split(u"।") #since hindi sentences end with '|'
 words_list = list()
 for sentence in sentences:
     words = sentence.split(' ') #words are seperated by a space in hindi
-    words_list += words
+    words_list = words_list+words
 
 suffixes = {
     1: [u"ो",u"े",u"ू",u"ु",u"ी",u"ि",u"ा"],
@@ -22,11 +22,11 @@ suffixes = {
     3: [u"ाकर",u"ाइए",u"ाईं",u"ाया",u"ेगी",u"ेगा",u"ोगी",u"ोगे",u"ाने",u"ाना",u"ाते",u"ाती",u"ाता",u"तीं",u"ाओं",u"ाएं",u"ुओं",u"ुएं",u"ुआं"],
     4: [u"ाएगी",u"ाएगा",u"ाओगी",u"ाओगे",u"एंगी",u"ेंगी",u"एंगे",u"ेंगे",u"ूंगी",u"ूंगा",u"ातीं",u"नाओं",u"नाएं",u"ताओं",u"ताएं",u"ियाँ",u"ियों",u"ियां"],
     5: [u"ाएंगी",u"ाएंगे",u"ाऊंगी",u"ाऊंगा",u"ाइयाँ",u"ाइयों",u"ाइयां"],
-} #suffixes tin hindi language that change tense, gender, number but not the meaning
+} #suffixes in hindi language that change tense, gender, number but not the meaning
 
-stems=list()
+stems=[]
 for word in words_list:
-    for L in range(1,5): 
+    for L in 5,4,3,2,1: 
         if len(word) >= L + 1:
             for suffix in suffixes[L]:
                 if word.endswith(suffix):
